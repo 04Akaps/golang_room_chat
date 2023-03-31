@@ -4,6 +4,7 @@ go:
   - 1.x
 env:
   - CGO_ENABLED=0
+  - GO111MODULE=on
 install: true
 script:
   - go mod download
