@@ -1,7 +1,6 @@
 # golang_room_chat
 Golang을 통한 ChatServer
 
-
 이전에는 그냥 모든 채널에 전송을 하였지만,
 이번엔은 방마다 따로 패킷을 전송하게 수정
 
