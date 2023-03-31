@@ -1,9 +1,9 @@
 package server
 
 import (
+	"github.com/04Akaps/golang_room_chat/models"
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"
-	"kakaoTalk/models"
 	"net/http"
 )
 

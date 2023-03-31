@@ -2,8 +2,8 @@ package models
 
 import (
 	"encoding/json"
+	"github.com/04Akaps/golang_room_chat/errorHandler"
 	"github.com/gorilla/websocket"
-	"kakaoTalk/errorHandler"
 	"log"
 	"net/http"
 	"time"
