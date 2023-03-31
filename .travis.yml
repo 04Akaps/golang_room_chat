@@ -8,5 +8,5 @@ env:
   - CGO_ENABLED=0
 install: true
 script:
-  - go install
+  - go mod download
   - go build
