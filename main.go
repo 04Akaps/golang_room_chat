@@ -1,7 +1,7 @@
 package main
 
 import (
-	"kakaoTalk/server"
+	"github.com/04Akaps/golang_room_chat/server"
 	"log"
 	"net/http"
 )
