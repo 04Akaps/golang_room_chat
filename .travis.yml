@@ -5,7 +5,9 @@ go:
 env:
   - CGO_ENABLED=0
   - GO111MODULE=on
-install: true
+before_install:
+  - export GOPATH=$HOME/work
+  - export PATH=$PATH:$HOME/work/bin
 script:
   - go mod download
   - go build
