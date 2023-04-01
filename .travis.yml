@@ -7,11 +7,11 @@ env:
     - GO111MODULE=on
     - CGO_ENABLED=0
   matrix:
-    - SERVICE=kakaoTalk_Golang
+    - SERVICE=kakaotalk_golang
 before_install:
   - export GOPATH=$HOME/work
   - export PATH=$PATH:$HOME/work/bin
 script:
   - go mod download
   - go build
-  - docker image build -t myGolang:$TRAVIS_BRANCH $SERVICE
+  - docker image build -t mygolang:$TRAVIS_BRANCH $SERVICE
