@@ -14,4 +14,4 @@ before_install:
 script:
   - go mod download
   - go build
-  - docker image build -t mygolang:$TRAVIS_BRANCH $SERVICE
+  - docker image build -t mygolang:$SERVICE:$TRAVIS_BRANCH .

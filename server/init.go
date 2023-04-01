@@ -1,6 +1,7 @@
 package server
 
 import (
+	"fmt"
 	"github.com/04Akaps/golang_room_chat/models"
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"
@@ -8,6 +9,11 @@ import (
 )
 
 func RegisterRouter() http.Handler {
+
+	defer func() {
+		fmt.Println("--------- 서버 시작 ------------")
+	}()
+
 	router := mux.NewRouter()
 
 	c := cors.AllowAll() // 개발 편의상을 위해 전체 수용
